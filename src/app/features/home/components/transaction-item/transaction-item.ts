@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { Transaction } from '../../../../shared/transaction/interfaces/transaction';
 
 @Component({
   selector: 'app-transaction-item',
@@ -8,4 +9,6 @@ import { MatCardModule } from '@angular/material/card';
   templateUrl: './transaction-item.html',
   styleUrl: './transaction-item.scss',
 })
-export class TransactionItem {}
+export class TransactionItem {
+  transaction = input.required<Transaction>();
+}
