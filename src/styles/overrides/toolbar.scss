@@ -1,3 +1,5 @@
+// Sobrescreve as cores padrão do mat-toolbar do Angular Material.
+
 @use '@angular/material' as mat;
 
 @include mat.toolbar-overrides(

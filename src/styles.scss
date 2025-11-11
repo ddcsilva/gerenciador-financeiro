@@ -1,3 +1,6 @@
+// Arquivo principal de estilos. Importa temas, overrides e variáveis customizadas.
+// Aplica o tema do Angular Material e define estilos globais.
+
 @use '@angular/material' as mat;
 @use 'styles/theme-colors' as theme-colors;
 @use 'styles/overrides/toolbar';
@@ -10,7 +13,7 @@ html {
         primary: theme-colors.$primary-palette,
         tertiary: theme-colors.$tertiary-palette,
       ),
-      typography: mat.define-typography-config(),
+      typography: Roboto,
       density: 0,
     )
   );
