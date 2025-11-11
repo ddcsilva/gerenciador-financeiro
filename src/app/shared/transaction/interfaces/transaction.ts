@@ -1,4 +1,4 @@
-import { TransactionType } from "../enums/transaction-type";
+import { TransactionType } from '../enums/transaction-type';
 
 export interface Transaction {
   title: string;

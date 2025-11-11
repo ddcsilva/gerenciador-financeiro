@@ -5,9 +5,10 @@ import { Layout } from './core/layout/layout';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, Layout],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  template: `
+    <app-layout>
+      <router-outlet />
+    </app-layout>
+  `,
 })
-export class App {
-  protected readonly title = signal('gerenciador-financeiro');
-}
+export class App {}
