@@ -10,7 +10,7 @@ html {
         primary: theme-colors.$primary-palette,
         tertiary: theme-colors.$tertiary-palette,
       ),
-      typography: Roboto,
+      typography: mat.define-typography-config(),
       density: 0,
     )
   );
